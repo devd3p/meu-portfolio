@@ -1,0 +1,522 @@
+/*ESTILOS GERAIS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.inteface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #C0504D;
+    color: rgb(78, 9, 9);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #c0514d86;
+    transform: scale(1.05);
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #883936;
+}
+
+h2.subtitulo{
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+}
+
+h4.subtitulo{
+    padding: 40px 4%;
+    gap:40px;
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+}
+
+h6.subtitulo{
+    padding: 10px 1%;
+    gap:10px;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+}
+
+h4.subtitulo span{
+    color: #883936;
+}
+
+h6.subtitulo span{
+    color: #883936;
+}
+
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+header .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #727272;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+
+header nav.menu a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav.menu ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ESTILO MENU MOBILE */
+
+.btn-abrir-menu i{
+    color: #772320;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 8%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #772320;
+    font-size: 30px;
+
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #772320;
+    color: #000;
+}
+
+.overlay-menu{
+    background-color: #000000df;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/*ESTILO DO TOPO DO SITE */
+
+section.top{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.top .flex{
+    align-items: center;
+    justify-content: center;
+    gap:90px
+}
+
+.top h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.top h1 span{
+    color: #883936;
+}
+
+.top .txt-top h1 span{
+    color: #772320;
+}
+
+.top .txt-top p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.top .img-top img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top:30px;
+    }
+}
+
+/* ESTILOS DAS ESPECIALIDADES*/
+
+section.especialidades{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.especialidades .flex{
+    gap:60px;
+
+}
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    display: inline-block;
+    transition: .2s;
+    justify-content: space-between;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff65;
+}
+
+.especialidades .especialidades-box i{
+    font-size:70px;
+    color:#772320;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* ESTILOS DE SOBRE */
+
+section.sobre{
+    padding:120px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #772320;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #883936;
+    font-size: 23px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* ESTILO DO PORTFOLIO */
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    flex-wrap: nowrap;
+}
+
+section.portfolio .flex{
+    gap:40px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-port .video{
+    flex-direction: column;
+    display: inline-block;
+    justify-content: space-between;
+    width: 860px;
+    height: 860px;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    
+    
+}
+
+
+/* ESTILO DO FORMULARIO DE CONTATO*/
+
+section.formulario{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #00000028;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: #883936;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color:#C0504D;
+    color:#772320;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s;
+}
+
+/* ESTILO DO RODAPE */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #883936;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #883936;
+    font-size: 23px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+footer .line-footer p i{
+    color:#883936;
+    font-size: 22px;
+
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+.logo-footer img{
+    width: 150px;
+    height: auto;
+}
+
+/* ESTILO PARA RESPONSIVIDADE*/
+
+@media screen and (max-width: 1020px){
+    
+    .flex{
+        flex-direction: column;
+    }
+
+    section.top .flex{
+        flex-direction: column-reverse;
+    }
+
+    section.top{
+        padding: 20px 8%;
+    }
+
+    .top h1{
+        font-size: 30px;
+    }
+
+    
+    .menu, .btn-contato{
+        display:none;
+    }
+
+    .top .img-top img{
+        width: 100%;
+    }
+
+    section.top .flex{
+        gap:40px;
+    }
+
+    section.especialidades{
+        padding: 40px 8%;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    section.sobre{
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    section.portfolio{
+        padding: 80px 8%;
+    }
+
+    .img-port .video{
+        width: 100%;
+        max-width: 430px;
+    }
+
+    section.portfolio .flex{
+        gap: 60px;
+    }
+
+    footer .flex{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+
+}
